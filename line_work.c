@@ -3,11 +3,23 @@
 void my_strlen(const char *s) 
 {
     int length;
+
     for (length = 0; s[length] != '\0'; length++)
     {
 
     }
     printf("длина: %d\n", length);
+}
+
+void my_strchr(const char *s)
+{
+    int character;
+
+    for (character = 0; s[character] != 'r'; character++)
+    {
+    
+    }
+    printf("Ваш символ найден на %d-й позиции\n", character + 1);
 }
 
 int main() 
@@ -27,7 +39,8 @@ int main()
         }
         case 2:
         {
-            printf("strchr пока не делал\n");
+            const char *str = "duralei";
+            my_strchr(str);
             break;
         }
         case 3:
